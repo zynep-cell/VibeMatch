@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeMatch | Daily English Ritual</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="app-container">
+        <header class="vibe-header">
+            <h1>VibeMatch</h1>
+            <p class="subtitle">Bugünün 5 tınısı hazır.</p>
+        </header>
+
+        <section id="cards-container" class="cards-grid">
+            <!-- Kartlar JavaScript ile buraya gelecek -->
+        </section>
+
+        <footer class="vibe-footer">
+            <button id="complete-btn" class="main-btn">Ritüeli Tamamla</button>
+        </footer>
+    </main>
+
+    <!-- Modal: Kapanış Mesajı -->
+    <div id="finish-modal" class="modal hidden">
+        <div class="modal-content">
+            <p id="modal-text"></p>
+            <button onclick="closeModal()" class="close-btn">Devam Et</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
