@@ -14,37 +14,33 @@
             <h1>VibeMatch</h1>
             <p class="subtitle">Bugünün tınısını ve modunu belirle.</p>
             
-            <!-- Mood Selector: Günlük enerjini seçtiğin alan -->
             <div class="mood-selector">
-                <button class="mood-btn" onclick="setMood('serene', '#f8f9fa')">🌿 Serene</button>
-                <button class="mood-btn" onclick="setMood('energetic', '#fffcf2')">⚡ Energetic</button>
-                <button class="mood-btn" onclick="setMood('melancholy', '#e5e5e5')">☁️ Melancholy</button>
-                <button class="mood-btn" onclick="setMood('focus', '#edf2f4')">🎯 Focus</button>
+                <button class="mood-btn" onclick="setMood('#f8f9fa')">🌿 Serene</button>
+                <button class="mood-btn" onclick="setMood('#fffcf2')">⚡ Energetic</button>
+                <button class="mood-btn" onclick="setMood('#e5e5e5')">☁️ Melancholy</button>
+                <button class="mood-btn" onclick="setMood('#edf2f4')">🎯 Focus</button>
             </div>
         </header>
 
-        <!-- Kelime Kartları Alanı -->
         <section id="cards-container" class="cards-grid">
-            <!-- Kartlar JavaScript ile buraya gelecek -->
+            <!-- Kartlar JS ile gelecek -->
         </section>
 
         <div class="ritual-action">
-            <button id="complete-btn" class="main-btn">Ritüeli Tamamla</button>
+            <button id="complete-btn" class="main-btn">Ritüeli Tamamla & Arşive Ekle</button>
         </div>
 
         <hr class="divider">
 
-        <!-- Zaman Tüneli: Geçmiş Kayıtların Listelendiği Alan -->
         <section class="timeline-section">
             <h2>The Soul Log</h2>
             <div id="timeline-container" class="timeline-grid">
-                <!-- Kayıtlar otomatik olarak buraya eklenecek -->
+                <!-- Kayıtlar buraya gelecek -->
             </div>
-            <button id="clear-log" class="clear-btn" onclick="clearLogs()">Arşivi Temizle</button>
+            <button class="clear-btn" onclick="clearLogs()">Arşivi Temizle</button>
         </section>
     </main>
 
-    <!-- Modal: Başarı Mesajı -->
     <div id="finish-modal" class="modal hidden">
         <div class="modal-content">
             <p id="modal-text"></p>
